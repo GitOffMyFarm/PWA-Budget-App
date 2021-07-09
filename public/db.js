@@ -1,7 +1,7 @@
 let db;
 let transactionVersion;
 
-const request = indexedDB.open('DBTransaction', transactionVersion || 21);
+const request = indexedDB.open('dbTransaction', transactionVersion || 21);
 
 request.onupgradeneeded = function (e) {
   console.log('Upgrade needed in IndexDB');
